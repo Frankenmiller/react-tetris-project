@@ -23,7 +23,7 @@ export const useStage = (player, setPlayer) => {
         };
 
         setStage(prev => updateStage(prev));
-    }, [player.collided, player.pos.x, player.pos.y, player.tetromino]);
+    }, [player]); //.collided, player.pos.x, player.pos.y, player.tetromino]);
 
     return [stage, setStage];
 }
