@@ -44,8 +44,15 @@ export const TETROMINOS = {
         ], color: '255, 244, 79'} // yellow
 }
 
+// export const randomTetromino = () => {
+//     const tetrominos = 'ILJOSTZ';
+//     const randTetromino = tetrominos[Math.floor(Math.random() * tetrominos.length)];
+//     return tetrominos[randTetromino];
+// }
+
 export const randomTetromino = () => {
-    const tetrominos = 'ILJOSTZ';
-    const randTetromino = tetrominos[Math.floor(Math.random() * tetrominos.length)];
-    return tetrominos[randTetromino];
+    const tetrominos = 'IJLOSTZ';
+    const randTetromino =
+      tetrominos[Math.floor(Math.random() * tetrominos.length)];
+    return TETROMINOS[randTetromino];
 }
